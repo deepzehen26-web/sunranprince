@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #87CEEB, #FFD700); /* Sky blue to gold gradient */
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.container {
+    max-width: 600px;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 3em;
+    color: #FF69B4; /* Hot pink */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+p {
+    font-size: 1.2em;
+    margin: 20px 0;
+}
+
+.cake {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 20px auto;
+}
+
+.layer {
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+}
+
+.layer1 {
+    bottom: 0;
+    background: #8B4513; /* Brown */
+}
+
+.layer2 {
+    bottom: 40px;
+    background: #D2691E; /* Chocolate */
+}
+
+.layer3 {
+    bottom: 80px;
+    background: #F5DEB3; /* Wheat */
+}
+
+.icing {
+    position: absolute;
+    top: 80px;
+    width: 100%;
+    height: 20px;
+    background: #FFFACD; /* Lemon chiffon */
+    border-radius: 10px 10px 0 0;
+}
+
+.candle {
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 4px;
+    height: 40px;
+    background: #FFFF00; /* Yellow */
+}
+
+.flame {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 8px;
+    height: 12px;
+    background: #FF4500; /* Orange red */
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+    animation: flicker 1s infinite alternate;
+}
+
+@keyframes flicker {
+    0% { opacity: 1; }
+    100% { opacity: 0.7; }
+}
+
+.message {
+    font-style: italic;
+    color: #8B0000; /* Dark red */
+}
